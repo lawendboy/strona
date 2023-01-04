@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    background-color: #181818;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Alef', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.topMenu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+}
+
+.menuLeft{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.logo{
+    height: 100%;
+}
+
+.menuRight{
+    margin-right: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.option{
+    height: 10%;
+    margin: 10px;
+    transition: 100ms ease-in-out;
+}
+
+.option:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.option > a{
+    text-decoration: none;
+    color: white;
+}
+
+.content{
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.selector{
+    background-color: rgb(71, 71, 71);
+    border: 10px solid rgb(85, 85, 85);
+    border-radius: 20px;
+    height: 600px;
+    width: 300px;
+    margin-left: 300px;
+    transition: 100ms cubic-bezier(1,.1,.26,1);
+}
+
+.selector:hover {
+    transform: scale(1.003, 1.003);
+}
+
+.selection{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 70px;
+    background-color: rgb(110, 109, 107);
+    border: 3px solid black;
+    border-radius: 10px;
+    vertical-align: middle;
+    transition: 400ms cubic-bezier(.55,.09,.18,1);
+    color: white;
+    cursor: pointer;
+}
+
+.selection:hover{
+    background-color: rgb(129, 123, 112);
+    transform: scale(1.09, 1.09);
+}
+
+.selection > div{
+    margin-top: 5px;
+    text-align: center;
+    transition: 200ms cubic-bezier(.55,.09,.18,1);
+    font-size: 11pt;
+}
+
+.selection:hover > div{
+    font-size: 14pt;
+}
+
+.images{
+    margin-left: 40px;
+    border: 10px solid rgb(85, 85, 85);
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 900px;
+    height: 600px;
+}
+
+.preview{
+    width: 900px;
+    height: 600px;
+    transform: translate(-5px, -5px);
+}
+
+
+.previewContainer{
+    width: 450px;
+    height: 300px;
+}
+
+.previewImg {
+    width: 450px;
+    height: 300px;
+}
