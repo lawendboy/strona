@@ -1,0 +1,27 @@
+.kalendarz{
+    position:absolute
+}
+
+.day5{
+    background-color: yellow;
+}
+
+.day6{
+    background-color: yellow;
+}
+
+.day0, .day1, .day2, .day3, .day4 {
+    background-color: lightgray;
+}
+
+.tday{
+    background-color: lightblue;
+}
+
+.titleKalendarz{
+    background-color: lightblue;
+}
+
+.centerContent {
+    margin-top: 190px;
+}

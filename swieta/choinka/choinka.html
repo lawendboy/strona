@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            margin: 10px;
+            width: 150px;
+            height: 75px;
+            border-radius: 10px;
+            background-color: rgb(203, 236, 82);
+        }
+        .button:hover{
+            background-color: rgb(196, 223, 100);
+        }
+        img{
+            margin: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body style="background-color: green;">
+    <button style="position: absolute; transform: translateY(-20px)"><a href="./../index.html"><</a></button>
+    <center>
+        <h1 style="font-size: 40pt;">Choinki</h1>
+
+        <button class="button">Świerk</button>
+        <button class="button">Jodła</button>
+        <button class="button">Sosna</button>
+
+        <br>
+
+        <img>
+        <img>
+        <img>
+    </center>
+
+    <script>
+        let buttons = document.querySelectorAll(".button");
+        let images = document.querySelectorAll("img");
+
+        buttons[0].addEventListener('click', () => {
+            images[0].src = "swierk1.jpg";
+            images[1].src = "swierk2.jpg";
+            images[2].src = "swierk3.jpg";
+        });
+
+        buttons[1].addEventListener('click', () => {
+            images[0].src = "jodla1.jpg";
+            images[1].src = "jodla2.jpg";
+            images[2].src = "jodla3.jpg";
+        });
+
+        buttons[2].addEventListener('click', () => {
+            images[0].src = "sosna1.jpg";
+            images[1].src = "sosna2.jpg";
+            images[2].src = "sosna3.jpg";
+        });
+    </script>
+</body>
+</html>
